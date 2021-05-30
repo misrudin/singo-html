@@ -12,7 +12,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="assets/logo.svg" alt="" width="128" height="46"
+            <img src="assets/navbar/singo.svg" alt="" width="128" height="46"
                  class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -99,7 +99,7 @@
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <button class="btn btn-primary mt-3">Selengkapnya</button>
+                <button onclick="buttonSelengkapnya()" class="btn btn-primary mt-3">Selengkapnya</button>
             </div>
             <div class="col images">
                 <div class="grid-3">
@@ -221,8 +221,10 @@
                             scelerisque varius.
                             Faucibus vitae aliquet nec dui ut ornare. Phasellus vestibulum lorem sed risus
                             ultricies...</p>
-                        <a class="news-cta mt-2" href="#">Baca selengkapnya <img src="assets/icons/right.png"
-                                                                                 alt="Selengkapnya"></a>
+                        <div class="news-cta mt-2">
+                            <a href="#">Baca selengkapnya</a>
+                            <img src="assets/icons/right.png" alt="Selengkapnya">
+                        </div>
                     </div>
                 </div>
                 <div class="news-item mt-5">
@@ -236,8 +238,10 @@
                             scelerisque varius.
                             Faucibus vitae aliquet nec dui ut ornare. Phasellus vestibulum lorem sed risus
                             ultricies...</p>
-                        <a class="news-cta mt-2" href="#">Baca selengkapnya <img src="assets/icons/right.png"
-                                                                                 alt="Selengkapnya"></a>
+                        <div class="news-cta mt-2">
+                            <a href="#">Baca selengkapnya</a>
+                            <img src="assets/icons/right.png" alt="Selengkapnya">
+                        </div>
                     </div>
                 </div>
                 <div class="news-item mt-5">
@@ -251,8 +255,10 @@
                             scelerisque varius.
                             Faucibus vitae aliquet nec dui ut ornare. Phasellus vestibulum lorem sed risus
                             ultricies...</p>
-                        <a class="news-cta mt-2" href="#">Baca selengkapnya <img src="assets/icons/right.png"
-                                                                                 alt="Selengkapnya"></a>
+                        <div class="news-cta mt-2">
+                            <a href="#">Baca selengkapnya</a>
+                            <img src="assets/icons/right.png" alt="Selengkapnya">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -327,5 +333,10 @@
 </section>
 <!--footer end-->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    function buttonSelengkapnya() {
+        window.location.href = "/singo/profile.html"
+    }
+</script>
 </body>
 </html>
