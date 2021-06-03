@@ -94,6 +94,12 @@ button.btn-primary:focus {
   background-repeat: no-repeat;
   position: relative;
 }
+.banner.banner-2 {
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  background-position: bottom;
+}
 .banner:before {
   content: "";
   position: absolute;
@@ -115,8 +121,7 @@ button.btn-primary:focus {
   color: #F0F4F6;
 }
 .banner h1 {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 61px;
   line-height: 140%;
   color: #FFFFFF;
@@ -688,6 +693,30 @@ button.btn-primary:focus {
   width: 20px;
   height: 20px;
   object-fit: contain;
+}
+
+.select2-container .select2-choice {
+  padding: 5px 10px;
+  height: 40px;
+  width: 132px;
+  font-size: 1.2em;
+}
+
+.select2-container--default .select2-selection--single {
+  position: relative;
+  height: 40px;
+  padding: 5px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  width: 40px;
+  font-size: 1.3em;
+  padding: 4px 12px;
+  height: 27px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #5C6F80;
 }
 
 /*# sourceMappingURL=style.css.map */
