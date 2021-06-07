@@ -45,7 +45,7 @@
         <div class="row justify-content-center">
             <div class="col-md-9">
                 <div class="address-detail">
-                    <img src="assets/navbar/rikolto.svg" alt="Logo">
+                    <img src="assets/navbar/rikolto.svg" class="logo" alt="Logo">
                     <div class="detail">
                         <h1>Rikolto</h1>
                         <div class="item">
@@ -57,7 +57,7 @@
                                 <img src="assets/icons/feather_mail.svg" alt="Main">
                                 <p>contact@asbindonesia.org</p>
                             </div>
-                            <div class="item ms-4">
+                            <div class="item">
                                 <img src="assets/icons/feather_globe.svg" alt="Globe">
                                 <p>https://www.asbindonesia.org/</p>
                             </div>
@@ -74,7 +74,7 @@
 </section>
 <!--address end-->
 
-<!--profile detail-->
+<!--publikasi-->
 <section id="profile-detail">
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -83,89 +83,87 @@
                     <h5 class="title">Publikasi</h5>
                     <div class="line mb-4"></div>
 
-                    <div class="row row-cols-3 gx-5 gy-4">
-                        <div class="col item_publikasi">
-                            <div class="image-container">
-                                <img src="assets/publikasi/image%2024.png" alt="Publikasi">
-                            </div>
-                            <h4 class="mt-3">Modul Pelatihan Implementasi UU 14</h4>
-                            <p class="mt-2">Pak Boed</p>
+                    <div class="row-publikasi">
+                    <div class="col item_publikasi">
+                        <div class="image-container">
+                            <img src="assets/publikasi/image%2024.png" alt="Publikasi">
                         </div>
-                        <div class="col item_publikasi">
-                            <div class="image-container">
-                                <img src="assets/publikasi/image%2025.png" alt="Publikasi">
-                            </div>
-                            <h4 class="mt-3">Bonjour Bobigny n° 880 du 13 au 26</h4>
-                            <p class="mt-2">Ville de Bobigny</p>
+                        <h4 class="mt-3">Modul Pelatihan Implementasi UU 14</h4>
+                        <p class="mt-2">Pak Boed</p>
+                    </div>
+                    <div class="col item_publikasi">
+                        <div class="image-container">
+                            <img src="assets/publikasi/image%2025.png" alt="Publikasi">
                         </div>
-                        <div class="col item_publikasi">
-                            <div class="image-container">
-                                <img src="assets/publikasi/image%2030.png" alt="Publikasi">
-                            </div>
-                            <h4 class="mt-3">It Ends With Us</h4>
-                            <p class="mt-2">Colleen Hoover</p>
+                        <h4 class="mt-3">Bonjour Bobigny n° 880 du 13 au 26</h4>
+                        <p class="mt-2">Ville de Bobigny</p>
+                    </div>
+                    <div onclick="detailPublikasi()" class="col item_publikasi">
+                        <div class="image-container">
+                            <img src="assets/publikasi/image%2030.png" alt="Publikasi">
                         </div>
+                        <h4 class="mt-3">It Ends With Us</h4>
+                        <p class="mt-2">Colleen Hoover</p>
+                    </div>
 
-                        <div class="col item_publikasi">
-                            <div class="image-container">
-                                <img src="assets/publikasi/image%2027.png" alt="Publikasi">
-                            </div>
-                            <h4 class="mt-3">Peaky Blinders The Real Story</h4>
-                            <p class="mt-2">Carl Chinn</p>
+                    <div class="col item_publikasi">
+                        <div class="image-container">
+                            <img src="assets/publikasi/image%2027.png" alt="Publikasi">
                         </div>
-                        <div class="col item_publikasi">
-                            <div class="image-container">
-                                <img src="assets/publikasi/image%2029.png" alt="Publikasi">
-                            </div>
-                            <h4 class="mt-3">Filosofi Teras</h4>
-                            <p class="mt-2">Henry Manampiring</p>
-                        </div>
-                        <div class="col item_publikasi">
-                            <div class="image-container">
-                                <img src="assets/publikasi/image%2028.png" alt="Publikasi">
-                            </div>
-                            <h4 class="mt-3">The Subtle Art of Not Giving A F*ck</h4>
-                            <p class="mt-2">Mark Manson</p>
-                        </div>
+                        <h4 class="mt-3">Peaky Blinders The Real Story</h4>
+                        <p class="mt-2">Carl Chinn</p>
                     </div>
-                    <div class="d-flex justify-content-center mt-4">
-                        <button class="btn btn-primary">Lihat lebih banyak</button>
+                    <div class="col item_publikasi">
+                        <div class="image-container">
+                            <img src="assets/publikasi/image%2029.png" alt="Publikasi">
+                        </div>
+                        <h4 class="mt-3">Filosofi Teras</h4>
+                        <p class="mt-2">Henry Manampiring</p>
                     </div>
+                    <div class="col item_publikasi">
+                        <div class="image-container">
+                            <img src="assets/publikasi/image%2028.png" alt="Publikasi">
+                        </div>
+                        <h4 class="mt-3">The Subtle Art of Not Giving A F*ck</h4>
+                        <p class="mt-2">Mark Manson</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-primary">Lihat lebih banyak</button>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 </section>
-<!--profile detail end-->
+<!--publikasi end-->
 
 <!--footer-->
 <section class="footer">
     <div class="container">
-        <div class="row row-cols-3">
-            <div class="col-2">
-                <div class="row row-cols-3 social">
-                    <div class="col">
-                        <a href="#"><img src="assets/footer/instagram.svg" alt="Instagram"></a>
-                    </div>
-                    <div class="col">
-                        <a href="#"><img src="assets/footer/facebook.svg" alt="Facebook"></a>
-                    </div>
-                    <div class="col">
-                        <a href="#"><img src="assets/footer/twitter.svg" alt="Twitter"></a>
-                    </div>
+        <div class="row-footer">
+            <div class="footer-social">
+                <div class="col">
+                    <a href="#"><img src="assets/footer/instagram.svg" alt="Instagram"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="assets/footer/facebook.svg" alt="Facebook"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="assets/footer/twitter.svg" alt="Twitter"></a>
                 </div>
             </div>
-            <div class="col-8 d-flex flex-column align-items-center justify-content-start">
-                <img src="assets/footer/ngo-white.svg" alt="SINGO">
+            <div class="footer-main">
+                <img src="assets/footer/ngo-white.svg" class="logo" alt="SINGO">
                 <div class="links mt-4">
-                    <a href="#">Beranda</a>
-                    <a href="#">Tentang</a>
-                    <a href="#">Profil NGO</a>
-                    <a href="#">Kontak</a>
-                    <a href="#">Berita</a>
+                    <a href="#" class="col">Beranda</a>
+                    <a href="#" class="col">Tentang</a>
+                    <a href="#" class="col">Profil NGO</a>
+                    <a href="#" class="col">Kontak</a>
+                    <a href="#" class="col">Berita</a>
                 </div>
             </div>
-            <div class="col-2 address-info">
+            <div class="footer-address">
                 <p>Jl. Medan Merdeka Utara No.7,
                     Jakarta Pusat 10110</p>
                 <hr>
@@ -173,12 +171,17 @@
                 <p>021 3810343</p>
             </div>
         </div>
-        <div class="row justify-content-center mt-2">
+        <div class="row justify-content-center mt-4">
             <p class="text-center copyright">Copyright &copy; 2021 All Rights Reserved</p>
         </div>
     </div>
 </section>
 <!--footer end-->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    function detailPublikasi() {
+        window.location.href = "/singo/publikasi-detail.html"
+    }
+</script>
 </body>
 </html>
