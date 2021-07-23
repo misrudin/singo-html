@@ -21,7 +21,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">Beranda</a>
                 </li>
                 <li class="nav-item">
@@ -88,7 +88,7 @@
 <!--profile-->
 <section class="profile">
     <div class="container">
-        <div class="row g-5">
+        <div class="rows_profile">
             <div class="col description">
                 <h4>
                     Non-Government Organization <br>
@@ -108,18 +108,18 @@
                     <img src="assets/profile/asb.png" alt="asb">
                 </div>
 
-                <div class="grid-2 mt-3">
+                <div class="grid-2">
                     <img src="assets/profile/ford.png" alt="ford">
                     <img src="assets/profile/islamic.png" alt="islamic">
                 </div>
 
-                <div class="grid-3 mt-3">
+                <div class="grid-3">
                     <img src="assets/profile/snv.png" alt="snv">
                     <img src="assets/profile/icco.png" alt="icco">
                     <img src="assets/profile/konard.png" alt="konard">
                 </div>
 
-                <div class="grid-3 mt-3">
+                <div class="grid-3">
                     <img src="assets/profile/winrock.png" alt="winrock">
                     <img src="assets/profile/plan.png" alt="plan">
                     <img src="assets/profile/rikolto.png" alt="rikolto">
@@ -134,7 +134,7 @@
                     incididunt ut labore et dolore magna aliqua</p>
             </div>
         </div>
-        <div class="row row-cols-3 g-5 row-about2">
+        <div class="row-about2">
             <div class="col">
                 <img src="assets/profile/Illustration-Rencana.png" alt="">
                 <h5>Rencana Kerja Tahunan</h5>
@@ -172,7 +172,7 @@
                     et dolore magna aliqua</p>
             </div>
         </div>
-        <div class="carousel-container">
+        <div class="carousel-container p-0">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -207,8 +207,8 @@
 <!--news-->
 <section class="news">
     <div class="container">
-        <div class="row row-cols-2 g-5">
-            <div class="col-md-8">
+        <div class="rows_news">
+            <div class="main_news">
                 <h5 class="title">Berita</h5>
                 <div class="news-item mt-5">
                     <img src="assets/news/news1.png" alt="News">
@@ -262,7 +262,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4">
+            <div class="news_aside">
                 <h5 class="title mb-5">Kisah Sukses</h5>
                 <div class="mini-news-item mt-3">
                     <h5 class="mini-news-title">Adipiscing at in tellus integer feugiat scelerisque varius</h5>
@@ -333,48 +333,47 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
-    function buttonSelengkapnya() {
-        window.location.href = "/singo/profile.html"
-    }
+  function buttonSelengkapnya() {
+    window.location.href = '/singo/profile.html';
+  }
 
-    $(window).scroll(startCounter);
+  $(window).scroll(startCounter);
 
-    function startCounter() {
-        if ($(window).scrollTop() > $('#achievement')[0].offsetTop/3) {
-            $(window).off("scroll", startCounter);
+  function startCounter() {
+    if ($(window).scrollTop() > $('#achievement')[0].offsetTop / 3) {
+      $(window).off('scroll', startCounter);
 
-            $('.counter').each(function() {
-                let $this = $(this),
-                    countTo = $this.attr('data-count'),
-                    sufix = $this.attr('data-sufix'),
-                    prefix = $this.attr('data-prefix');
+      $('.counter').each(function() {
+        let $this = $(this),
+            countTo = $this.attr('data-count'),
+            sufix = $this.attr('data-sufix'),
+            prefix = $this.attr('data-prefix');
 
-
-                $({ countNum: $this.text()}).animate({
-                        countNum: countTo
-                    },
-                    {
-                        duration: 7000,
-                        easing:'linear',
-                        step: function() {
-                            if (sufix) {
-                                $this.text(`${sufix} ${Math.floor(this.countNum)} ${prefix}`);
-                            }else {
-                                $this.text(`${Math.floor(this.countNum)}${prefix}`);
-                            }
-                        },
-                        complete: function() {
-                            if (sufix) {
-                                $this.text(`${sufix} ${this.countNum} ${prefix}`);
-                            }else {
-                                $this.text(`${this.countNum}${prefix}`);
-                            }
-                        }
-                    });
+        $({countNum: $this.text()}).animate({
+              countNum: countTo,
+            },
+            {
+              duration: 7000,
+              easing: 'linear',
+              step: function() {
+                if (sufix) {
+                  $this.text(`${sufix} ${Math.floor(this.countNum)} ${prefix}`);
+                } else {
+                  $this.text(`${Math.floor(this.countNum)}${prefix}`);
+                }
+              },
+              complete: function() {
+                if (sufix) {
+                  $this.text(`${sufix} ${this.countNum} ${prefix}`);
+                } else {
+                  $this.text(`${this.countNum}${prefix}`);
+                }
+              },
             });
+      });
 
-        }
     }
+  }
 
 </script>
 </body>
